@@ -1,3 +1,4 @@
+
 #--------------------------------------------------------------------------------
 # Andrea Marin
 # MODELAMIENTO Y VISUALIZACIÓN
@@ -11,8 +12,10 @@ library(tidyverse)
 
 
 #Asignación de directorio y lectura de bbdd
-setwd("C:/Users/Paola/Desktop/VIZ_CURSO/S4/Practica")
-data<-read_excel('SupermarketTransactions_2.xlsx')
+setwd("C:/Users/juan/Documents/Visualizacion")
+data<-read_excel('data/SupermarketTransactions_2.xlsx')
+
+# remove the last column from the dataset
 data <-data[,-17]
 
 ##################################  ANTES DE ENTRAR A TRABAJAR CON LA BBDD DEBEMOS HACER VERIFICACIONES SOBRE LAS VARAIBLES Y LA ##############
